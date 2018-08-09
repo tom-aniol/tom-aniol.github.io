@@ -1,0 +1,150 @@
+body {
+  overflow: hidden; /* Nowe */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 24px;
+  margin: 0 0 24px 0;
+  opacity: 0.75;
+}
+
+a {
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
+}
+
+button:hover, button:visited, button:link, button:active{
+text-decoration: none;
+}
+
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #686868;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Nowe */
+}
+
+.bg {
+  background: url("https://iso.500px.com/wp-content/uploads/2014/07/2048-12.jpg") repeat-x bottom left; /* Nowe */
+  height: 100%; /* Dopisane */
+  position: absolute; /* Nowe */
+  background-size: 2250px; /* Nowe */
+  width: 6750px; /* Nowe */
+}
+
+.middle-box {
+  animation: show 0.5s 0.5s forwards;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px; /* Dopisane */
+}
+
+.image-box {
+  padding: 10px
+
+}
+
+.tom-image {
+
+  clip-path: circle(120px at center);
+
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  animation: show 0.1s ease-in-out forwards;
+  transition: all 0.1s ease-in-out;
+  border: none;
+  width: 45px;
+  height: 45px;
+  margin: 0px;
+  display: center;
+  align-items: center;
+  justify-content: center; 
+  margin: 10px 20px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  background-color: rgba(28, 8, 211, 0.479);
+}
+
+.nav-item a {
+  font-size: 50px;
+}
+
+.short-bio {
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+
+}
+.bio-text {
+  text-align: center;
+
+
+}
+
+.button-div {
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+
+.button {
+  stroke: solid;
+  width: 335px;
+  height: 65px;
+  font-family: Source Sans Pro;
+  background: none;
+  border-radius: 50px;
+  border-color: #fff;
+  font-style: #fff;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+ 
+}
+
+.button:hover {
+  background-color: rgba(108, 108, 114, 0.479);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
